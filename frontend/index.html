@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>Dragondinde</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script>
+    
+</script>
+<body onload="initIndex()">
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Dragodinde Manager</a>
+            <ul class="right">
+                <li><a href="getBaffeur.html">Baffeur</a></li>
+                <li><a href="getCaresseur.html">Caresseur</a></li>
+                <li><a href="getAbreuvoir.html">Abreuvoir</a></li>
+                <li><a href="getDragofesse.html">Dragofesse</a></li>
+                <li><a href="getFoudroyeur.html">Foudroyeur</a></li>
+                <li><a href="addDD.html"><i class="material-icons">add</i></a></li>
+            </ul>           
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="row"> 
+                <input type="text" id="ddId" class="col s12">
+                <input type="button" value="get" onclick="getDD()" class="col s12 btn">     
+        </form>
+    </div>
+
+    <div class="container">
+        <form id="ddForm">
+            <ul id="dragodinde" class="row">
+                <li class="col s12">
+                    <p class="col s4">ID: </p>
+                    <input disabled id="idDD" class="col s8">
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Sexe: </p><p id="sexe" class="col s8"></p>
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Couleur: </p><p id="couleur" class="col s8"></p>
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Reproduction: </p>
+                    <input id="reproduction" class="col s8">
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Amour: </p>
+                    <div id="amourDiv" class="col s8"></div>
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Maturité: </p>
+                    <div id="maturiteDiv" class="col s8"></div>
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Endurance: </p>
+                    <div id="enduranceDiv" class="col s8"></div>
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Stat:</p>
+                    <input type="text" id="stat" class="col s8">
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Féconde: </p>
+                    <div id="fecondeDiv" class="col s8"></div>
+                </li>
+                <li class="col s12">
+                    <p class="col s4">Fécondée: </p>
+                    <div id="fecondeeDiv" class="col s8"></div>
+                </li>
+            </ul>
+            <div class="row">
+                <button class= "col s12 btn" id="updateButton" onclick="updateDD()">UPDATE</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

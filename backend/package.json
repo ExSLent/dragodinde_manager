@@ -1,0 +1,22 @@
+{
+  "name": "elevage_dofus",
+  "version": "1.0.0",
+  "description": "Outil de gestion pour elevage dofus",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Alexis LEBRUN",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mariadb": "^3.1.1",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}
